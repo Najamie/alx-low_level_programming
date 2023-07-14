@@ -1,20 +1,22 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+*main- printing lowercase alphabets
+*
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-	char low;
+	char alphabets;
+	char s = '\n';
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		putchar('\n');
+	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+		putchar(alphabets);
+
+	putchar(s);
 
 	return (0);
 }
