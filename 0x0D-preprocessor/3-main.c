@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "3-function_like_macro.h"
 #include "3-function_like_macro.h"
-#define FUNCTION_LIKE_MACR0_H
+#define FUNCTION_LIKE_MACRO_H
 /**
  * main - check the code
  * 

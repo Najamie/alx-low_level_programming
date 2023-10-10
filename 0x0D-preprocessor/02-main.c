@@ -1,13 +1,12 @@
 #include <stdio.h>
-
 /**
- * main - print the file name of the source code
- *  
- * Return: int
- */
+ *  * main - function that prints file name
+ *   * Return: 0
+ *    */
+
 int main(void)
 {
+		printf("%s\n", __FILE__);
 
-	printf("%s\n", __FILE__);
-	return (0);
+		return (0);
 }
