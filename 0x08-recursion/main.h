@@ -20,4 +20,6 @@ int evaluate_prime(int input_num, int factor);
 int is_palindrome(char *s);
 int evaluate_palindrome(char *s, int start, int end);
 int wildcmp(char *s1, char *s2);
+void iterate_wild(char **wildstr);
+char *suffix_match(char *str, char *suffix);
 #endif
