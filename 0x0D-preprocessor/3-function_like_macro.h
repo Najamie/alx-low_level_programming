@@ -1,6 +1,12 @@
-#ifndef SUM_H
-#define SUM_H
+#ifndef FUNCTION_LIKE_MACR0_H
+#define FUNCTION_LIKE_MACR0_H
 
-#define SUM(x, y) ((x) + (y))
+/**
+ *  * file: 3-function_like_macro.h
+ *   * @x: input
+ *    * Desc: header file
+ *     */
+
+#define ABS(x) ((x) < 0 ? -(1) * (x) : (x))
 
 #endif
