@@ -1,31 +1,41 @@
 #include "main.h"
 
+int find_sqrt(int input_num, int let);
+int _sqrt_recursion(int n);
+
 /**
- * _sqrt_recursion - a function that returns the natural square root
- * @n: print natural square root
+ * find_sqrt - Find the square root of a number.
+ * @input_num: The number to find the square root of.
+ * @let: The square root value to be tested.
  *
- * Return: square root
+ * Return: Square root if found, otherwise -1.
  */
-int _sqrt_recursion(int n)
+int find_sqrt(int input_num, int let)
 {
-	if (n < 0)
+	if ((let * let) == input_num)
+		return (let);
+
+	if (let == input_num / 2)
 		return (-1);
-	return (actual_sqrt_recursion(n, 0));
+
+	return (find_sqrt(input_num, let + 1));
 }
 
 /**
- * actual_sqrt_recursion - recurses to find the natural
- * square root of a num
- * @n: number
- * @i: iterator
+ * _sqrt_recursion - Calculate the square root of a number.
+ * @n: The number to calculate the square root of.
  *
- * Return:the square root
+ * Return: Square root if found, otherwise -1.
  */
-int actual_sqrt_recursion(int n, int i)
+int _sqrt_recursion(int n)
 {
-	if (i * i > n)
+	int let = 0;
+
+	if (n < 0)
 		return (-1);
-	if (i * i == n)
-		return (i);
-	return (actual_sqrt_recursion(n, i + 1));
+
+	if (n == 1)
+		return (1);
+
+	return (find_sqrt(n, let));
 }
