@@ -1,24 +1,25 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
-
 /**
-* list_len - check the code for ALX School students.
-* @h: name of the list
-* Return: the number of nodes.
-*/
-size_t list_len(const list_t *h)
+ * print_list - prints all the elements of a linked list
+ * @h: pointer to the list_t list to print
+ *
+ * Return: the number of nodes printed
+ */
+size_t print_list(const list_t *h)
 {
+	size_t s = 0;
 
-	 int count = 0;
+	while (h)
+	{
+		if (!h->str)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
+		s++;
+	}
 
-         while (h)
-
-		 {
-                          count++;
-			  h = h->next;
-	   	 }
-	  return (count);
+	return (s);
 }
