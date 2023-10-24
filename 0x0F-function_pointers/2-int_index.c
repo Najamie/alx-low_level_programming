@@ -10,19 +10,21 @@
  * the cmp function does not return 0, or -1 if no match is found
  * or size is negative
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	int x;
 
 	if (array && cmp)
 	{
-		for (i = 0; i < size; i++)
+		for (x = 0; x < size; x++)
 		{
-			if (cmp(array[i]) != 0)
-				return (1);
+			if (cmp(array[x]) != 0)
+			{
+				return (x);
+			}
 		}
 	}
-
 	return (-1);
 }
 
