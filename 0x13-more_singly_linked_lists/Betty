@@ -1,0 +1,6 @@
+core: 0 out of 1 points
+
+Reason:
+
+lists.h:14: WARNING: Block comments use a trailing */ on a separate line
+total: 0 errors, 1 warnings, 38 lines checked
